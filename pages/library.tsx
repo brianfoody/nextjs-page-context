@@ -17,7 +17,7 @@ export default function Home({ data }: any) {
     <div className={styles.container}>
       <main className={styles.main}>
         {data.map((d: number) => (
-          <Link href={`/book`} shallow={true} key={d}>
+          <Link href={`/book`} shallow={true} scroll={false} key={d}>
             <div className={styles.card}>
               <h2>Examples {d}</h2>
               <p>Here is your book.</p>
